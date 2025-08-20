@@ -115,7 +115,7 @@ if df is not None:
 
         path_modeloa = os.path.join( '..', 'pipeline_modelo_final_v1.0.pkl')
         
-        modeloa =joblib.load(path_modeloa)
+        modeloa =joblib.load('pipeline_modelo_final_v1.0.pkl')
         df_pred = df.copy()
 
         y_pred = modeloa.predict(df_pred)
