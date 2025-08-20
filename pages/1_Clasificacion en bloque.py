@@ -113,7 +113,7 @@ if df is not None:
        
         # cargar modelo de clasificacion
 
-        path_modeloa = os.path.join( '..', '04_models', 'final', 'pipeline_modelo_final_v1.0.pkl')
+        path_modeloa = os.path.join( '..', 'pipeline_modelo_final_v1.0.pkl')
         
         modeloa =joblib.load(path_modeloa)
         df_pred = df.copy()
