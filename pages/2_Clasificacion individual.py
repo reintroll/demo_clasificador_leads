@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib # Necesario para cargar el modelo
+import joblib 
 import os
 import time
 
@@ -84,8 +84,8 @@ datuak = [[nombre_empresa ,facturacion, empleados, sector, provincia2, dolor_lev
 
 df = pd.DataFrame(datuak, columns=["nombre_de_la_empresa", "tamaño_facturacion", "tamaño_empleados", "sektore_propioa", "provincia", "dolor_leve", "dolor_agudo", "notizia"])
 
-path_modeloa = os.path.join( '..', '04_models', 'final', 'pipeline_modelo_final_v1.0.pkl')
-modeloa =joblib.load(path_modeloa)
+
+modeloa =joblib.load('pipeline_modelo_final_v1.0.pkl')
 y_pred = modeloa.predict(df)
 
 calculo_lead = col2.button("Clasificar Lead individual")
