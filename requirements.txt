@@ -3,4 +3,4 @@ plotly
 altair
 pandas
 joblib
-sklearn
+scikit-learn
