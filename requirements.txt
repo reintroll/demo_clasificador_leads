@@ -2,3 +2,4 @@ matplotlib
 plotly
 altair
 pandas
+joblib
